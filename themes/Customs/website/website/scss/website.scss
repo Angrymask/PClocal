@@ -1,0 +1,191 @@
+/* @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * Do not name this file "STARTER.scss". This file should be named
+ * THEMENAME.scss. If you used the drush command to generate this subtheme,
+ * it should be named for you.
+ *
+ * This application file (ntest.scss) is where all the partials are
+ * imported.
+ */
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Import normalize.css
+// @import "../node_modules/normalize.css/normalize.css";
+
+// Import Bourbon.
+@import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+// Import Bitters.
+// @import "base/bitters";
+
+// Import Neat.
+@import "../node_modules/bourbon-neat/app/assets/stylesheets/neat";
+@import "../node_modules/bourbon-neat/app/assets/stylesheets/neat-helpers";
+
+// Import variables.
+@import "variables/breakpoints";
+@import "variables/colors";
+
+// Import layout.
+@import "base/layout";
+
+
+@import "common/messages";
+@import "common/tables";
+@import "common/tasks";
+
+
+@import "components/breadcrumb";
+@import "components/hero";
+@import "components/flexbox";
+@import "components/footer";
+
+
+$color_1: #a2bf2d;
+$color_2: white;
+$color_3: #ddd;
+$background-color_1: white;
+$background-color_2: #0c7922;
+$background-color_3: #1F53BC;
+$background-color_4: #007ecc;
+
+
+
+body {
+  background: white;
+  transition: background-color 0.3s ease; 
+}
+
+.site-logo {
+  width: 3em;
+  height: 3em;
+  transition: all 0.3s ease; 
+}
+
+#content {
+  padding: 20px;
+  background-color: $background-color_4;
+  transition: background-color 0.3s ease;
+}
+
+.DGF_link {
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #E0E0E0;
+  align-items: center;
+}
+
+.status-messages {
+  .status {
+    background-color: $background-color_2;
+    color: $color_1;
+    display: block;
+    margin-bottom: 0.75em;
+    padding: 0.75em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+   
+  }
+}
+
+.toolbar {
+  .toolbar-box {
+    position: relative;
+    display: block;
+    width: auto;
+    line-height: 1em;
+    background-color: $background-color_3;
+    color: $color_2;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    
+  }
+  .toolbar-bar {
+    color: $color_3;
+    background-color: $background-color_4;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+
+  }
+}
+
+
+.views-element-container {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+ 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+h2 {
+  font-size: 24px;
+  color: $color_1;
+  margin-bottom: 20px;
+}
+
+a {
+  color: $background-color_2;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+
+a:hover {
+  color: $color_1;
+}
+}
+.views-field-field-exemplo-1 {
+  font-style: italic;
+  color: $color_2;
+}
+
+
+.views-row {
+  background-color: $background-color_1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.paragraph {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: $background-color_1;
+  border-radius: 5px;
+}
+
+
+.contextual-links {
+  display: none;
+}
+
+.trigger:focus + .contextual-links,
+.contextual-links:hover {
+  display: block;
+}
+
+#block-website-titulodapagina{
+  .mover-titulo {
+    /* Suas propriedades CSS aqui */
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+  }
+}
+
+
+
+
